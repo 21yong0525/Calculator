@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상단색상"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="90dp">
+
+            <RadioButton
+                android:id="@+id/rbtn_top1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="black"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/rbtn_top2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pink"
+                android:textColor="@color/purple_200" />
+
+            <RadioButton
+                android:id="@+id/rbtn_top3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="purple"
+                android:textColor="@color/purple_500" />
+
+            <RadioButton
+                android:id="@+id/rbtn_top4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="teal"
+                android:textColor="@color/teal_200" />
+
+            <RadioButton
+                android:id="@+id/rbtn_top5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="green"
+                android:textColor="#43A047" />
+
+            <RadioButton
+                android:id="@+id/rbtn_top6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="blue"
+                android:textColor="#1E88E5" />
+
+            <RadioButton
+                android:id="@+id/rbtn_top7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="orange"
+                android:textColor="#F4511E" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="하단색상"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="67dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="90dp">
+
+            <RadioButton
+                android:id="@+id/rbtn_bot1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="black"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/rbtn_bot2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pink"
+                android:textColor="@color/purple_200" />
+
+            <RadioButton
+                android:id="@+id/rbtn_bot3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="purple"
+                android:textColor="@color/purple_500" />
+
+            <RadioButton
+                android:id="@+id/rbtn_bot4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="teal"
+                android:textColor="@color/teal_200" />
+
+            <RadioButton
+                android:id="@+id/rbtn_bot5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="green"
+                android:textColor="#43A047" />
+
+            <RadioButton
+                android:id="@+id/rbtn_bot6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="blue"
+                android:textColor="#1E88E5" />
+
+            <RadioButton
+                android:id="@+id/rbtn_bot7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="orange"
+                android:textColor="#F4511E" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="배경색상"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="67dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="90dp">
+
+            <RadioButton
+                android:id="@+id/rbtn_back1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="white"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/rbtn_back2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pink"
+                android:textColor="@color/purple_200" />
+
+            <RadioButton
+                android:id="@+id/rbtn_back3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="purple"
+                android:textColor="@color/purple_500" />
+
+            <RadioButton
+                android:id="@+id/rbtn_back4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="teal"
+                android:textColor="@color/teal_200" />
+
+            <RadioButton
+                android:id="@+id/rbtn_back5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="green"
+                android:textColor="#43A047" />
+
+            <RadioButton
+                android:id="@+id/rbtn_back6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="blue"
+                android:textColor="#1E88E5" />
+
+            <RadioButton
+                android:id="@+id/rbtn_back7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="orange"
+                android:textColor="#F4511E" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
