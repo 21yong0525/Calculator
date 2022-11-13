@@ -3,7 +3,6 @@ package com.yong.yongcalculator
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.yong.yongcalculator.databinding.FtBasicsBinding
 
 class PageAdapter(activity: FragmentActivity): FragmentStateAdapter(activity) {
     val fragmentList = ArrayList<Fragment>()

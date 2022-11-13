@@ -5,9 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.OnClickListener
 import android.view.ViewGroup
-import android.widget.RadioButton
 import androidx.core.content.ContextCompat
 import com.yong.yongcalculator.databinding.FtSettingBinding
 
@@ -24,7 +22,8 @@ class Setting : Fragment() {
         mainActivity = context as MainActivity
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         binding = FtSettingBinding.inflate(inflater, container, false)
 
@@ -34,7 +33,6 @@ class Setting : Fragment() {
 
         return binding.root
     }
-
 
     fun setstatusBarColor() {
         binding.rbtnTop1.setOnClickListener {mainActivity.window.statusBarColor = ContextCompat.getColor(requireActivity(), R.color.black)}
@@ -65,5 +63,4 @@ class Setting : Fragment() {
         binding.rbtnBack6.setOnClickListener {mainActivity.binding.drawerlayout.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.blue))}
         binding.rbtnBack7.setOnClickListener {mainActivity.binding.drawerlayout.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.orange))}
     }
-
 }

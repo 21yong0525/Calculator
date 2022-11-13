@@ -8,8 +8,6 @@ import com.yong.yongcalculator.databinding.ItemCalculationlistBinding
 
 class CustomAdapter(val dataList: MutableList<DataVO>): RecyclerView.Adapter<CustomAdapter.CustomViewHolder>() {
 
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
         val binding = ItemCalculationlistBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         val customViewHolder = CustomViewHolder(binding)

@@ -1,17 +1,12 @@
 package com.yong.yongcalculator
 
 import android.os.Bundle
-import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import androidx.viewpager.widget.ViewPager
+import androidx.core.content.ContextCompat
 import com.google.android.material.tabs.TabLayoutMediator
 import com.yong.yongcalculator.databinding.ActivityMainBinding
-import com.yong.yongcalculator.databinding.FtBasicsBinding
-
-
 import com.yong.yongcalculator.databinding.UsertabButtonBinding
 
 class MainActivity : AppCompatActivity() {
@@ -26,9 +21,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //액션바대신에 툴바로 대체
         setSupportActionBar(binding.toolbar)
-        //ActionBarDrawerToggle 버튼적용
 
         toggle = ActionBarDrawerToggle(
             this,
@@ -37,15 +30,9 @@ class MainActivity : AppCompatActivity() {
             R.string.drawer_close
         )
 
-        //업버튼 활성화
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-        //토글 sync
-
         toggle.syncState()
 
-
-        //어댑터를 생성
         val pageAdapter = PageAdapter(this)
         val titleList = mutableListOf<String>("계산","목록","설정")
 
@@ -59,21 +46,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.viewpager2.adapter = pageAdapter
 
-        //탭레이아웃 뷰페이저를 연동
         TabLayoutMediator(binding.tabLayout, binding.viewpager2){ tab, position ->
             tab.setCustomView(tabCreateView(titleList[position]))
         }.attach()
 
         binding.viewpager2.setCurrentItem(1)
         binding.viewpager2.setCurrentItem(0)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        //이벤트가 토글버튼에서 발생하면
-        if(toggle.onOptionsItemSelected(item)){
-            return true
-        }
-        return false
     }
 
     private fun tabCreateView(title: String): View {
