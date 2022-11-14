@@ -252,6 +252,3 @@ class Basics : Fragment() {
         }
     }
 }
-
-
-

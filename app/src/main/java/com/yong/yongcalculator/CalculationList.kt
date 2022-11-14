@@ -41,5 +41,4 @@ class CalculationList : Fragment() {
         dataList.remove(dataVO)
         customAdapter.notifyDataSetChanged()
     }
-
 }
